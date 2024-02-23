@@ -1,0 +1,25 @@
+
+workload:
+  deployments:
+    config:
+      template: deployment.tmpl
+    items:
+      - name: "nginx"
+        replicas: 1
+        image: "nginx:latest"
+        ports:
+          - containerPort: 80
+            protocol: "TCP"
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "128Mi"
+          limits:
+            cpu: "250m"
+            memory: "256Mi"
+        env:
+          - name: "NGINX_PORT"
+            value: "80"
+          - name: "NGINX_HOST"
+            value: "localhost"
+

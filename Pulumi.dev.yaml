@@ -1,0 +1,3 @@
+encryptionsalt: v1:WUPJz4vhDWc=:v1:hnsWHSVYuH8sv8nh:O1sFYQbu/IKd6lBNL/gACoMo5vGAQg==
+config:
+  pulumi-lab:isMinikube: "true"

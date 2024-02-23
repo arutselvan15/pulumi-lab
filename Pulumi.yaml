@@ -1,0 +1,9 @@
+name: pulumi-lab
+runtime: go
+description: A minimal Kubernetes Go Pulumi program
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: ""
+backend:
+  url: file://./local-state-storage
